@@ -1,0 +1,92 @@
+
+:root{
+    --Location:hsl(75, 94%, 57%);
+    --Name:hsl(0, 0%, 100%);
+    --Button:hsl(0, 0%, 20%);
+    --Card:hsl(0, 0%, 12%);
+    --Background:hsl(0, 0%, 8%);
+    --Font:"Inter", serif;
+}
+body{
+    background-color: var(--Background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--Font);
+    margin: 0;
+    flex-direction: column;
+}
+.card{
+    width: 50vh;
+    height: 75vh;
+    background-color: var(--Card);
+    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+}
+.card-content{
+    width: 46vh;
+    height: 72vh;
+}
+.card-avatar{
+    background-image: url(../images/avatar-jessica.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+.card-avatar__name p{
+    color: var(--Name);
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-avatar__location p{
+    color: var(--Location);
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.card-avatar__quote p{
+    color: var(--Name);
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 100%;
+}
+.card-links a{
+    text-decoration: none;
+    color: var(--Name);
+    width: 100%;
+    background-color: var(--Button);
+    text-align: center;
+    margin-top: 3vh;
+    border-radius: 5px;
+    font-weight: 700;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white; text-align: left;}
+.attribution a { color: var(--Location) }
